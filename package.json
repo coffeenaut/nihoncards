@@ -1,0 +1,31 @@
+{
+  "name": "gumite",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4050"
+  },
+  "dependencies": {
+    "vue": "^3.3.4"
+  },
+  "devDependencies": {
+    "@heroicons/vue": "^2.0.18",
+    "@tailwindcss/forms": "^0.5.6",
+    "@tailwindcss/line-clamp": "^0.4.4",
+    "@tailwindcss/typography": "^0.5.10",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "autoprefixer": "^10.4.15",
+    "postcss": "^8.4.29",
+    "tailwindcss": "^3.3.3",
+    "vite": "^4.4.5",
+    "vue-router": "^4.2.4"
+  },
+  "description": "This is a boilerplate package that is clone-able for quickstarting a vue app + tailwind and heroicons bundled with vite.",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "coffeenaut",
+  "license": "ISC"
+}
