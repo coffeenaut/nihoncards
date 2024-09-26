@@ -1,0 +1,1 @@
+function u(t,o=0){return Math.floor(Math.random()*(t-o+1)+o)}function i(t){return new Promise(o=>setTimeout(o,t))}function f(t){for(var o=t.length,n,e;o;)e=Math.floor(Math.random()*o--),n=t[o],t[o]=t[e],t[e]=n;return t}export{u as D,i as T,f as s};

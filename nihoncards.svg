@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="43.635464mm"
+   height="23.648396mm"
+   viewBox="0 0 43.635464 23.648396"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-63.368627,-58.466475)">
+    <rect
+       style="fill:#f8f8f8;fill-opacity:1;stroke:#16325b;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.909804"
+       id="rect1"
+       width="14.371394"
+       height="18.613251"
+       x="29.646065"
+       y="85.813187"
+       rx="0.1984375"
+       ry="0.1984375"
+       transform="rotate(-25.380132)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#227b94;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.909804"
+       x="31.483067"
+       y="98.195633"
+       id="text3"
+       transform="rotate(-25.380132)"><tspan
+         id="tspan3"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#227b94;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-opacity:0.909804"
+         x="31.483067"
+         y="98.195633">日</tspan></text>
+    <rect
+       style="fill:#f8f8f8;fill-opacity:1;stroke:#16325b;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.909804"
+       id="rect2"
+       width="14.371394"
+       height="18.613251"
+       x="77.978683"
+       y="59.921623"
+       rx="0.1984375"
+       ry="0.1984375" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#ffdc7f;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.909804"
+       x="79.938255"
+       y="72.825653"
+       id="text4"><tspan
+         id="tspan4"
+         style="fill:#ffdc7f;fill-opacity:1;stroke-width:0.529167"
+         x="79.938255"
+         y="72.825653">本</tspan></text>
+    <rect
+       style="fill:#f8f8f8;fill-opacity:1;stroke:#16325b;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.909804"
+       id="rect3"
+       width="14.371394"
+       height="18.613251"
+       x="109.15301"
+       y="18.446093"
+       rx="0.1984375"
+       ry="0.1984375"
+       transform="rotate(22.73166)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.909804"
+       x="111.21117"
+       y="31.375952"
+       id="text7"
+       transform="rotate(22.73166)"><tspan
+         id="tspan7"
+         style="fill:#333333;fill-opacity:1;stroke-width:0.529167"
+         x="111.21117"
+         y="31.375952">語</tspan></text>
+  </g>
+</svg>
