@@ -65,7 +65,7 @@ function closeSideMenu() {
         </div>
     </div>
     <div class="flex w-full justify-between gap-x-4 top-banner">
-        <a href="/nihoncards"><slot name="logo"></slot></a>
+        <a href="/"><slot name="logo"></slot></a>
         <menuIcon @click="showMenu" class="icon-medium-gray md:hidden cursor-pointer" />
         <nav class="hidden md:flex">
             <div class="flex gap-x-10 items-center">

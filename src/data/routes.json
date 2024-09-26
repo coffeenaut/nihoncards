@@ -1,27 +1,27 @@
 [
     {
       "name": "play",
-      "path": "/nihoncards/multichoice"
+      "path": "/multichoice"
     },
     {
         "name": "learn",
         "path": [
           {
             "name": "glossary",
-            "path": "/nihoncards/learn/glossary"
+            "path": "/learn/glossary"
           },
           {
             "name": "kana tables",
-            "path": "/nihoncards/learn/kanatables"
+            "path": "/learn/kanatables"
           },
           {
             "name": "flash cards",
-            "path": "/nihoncards/learn/flashcards"
+            "path": "/learn/flashcards"
           }
         ]
     },
     {
         "name":"info",
-        "path":"/nihoncards/info"
+        "path":"/info"
     }
   ]
