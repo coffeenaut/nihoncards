@@ -255,7 +255,6 @@ a:hover{
 }
 .navlist {
   align-self: start;
-  position: fixed;
   padding: 1em;
   width: 11%;
   font-size:1.2em;
@@ -282,7 +281,6 @@ a:hover{
   justify-content: center;
   justify-items: center;
   vertical-align: middle;
-  transform: translateX(0);
   transition: transform .5s ease-out;
 }
 .choice-list {
