@@ -1,15 +1,23 @@
 {
-  "name": "gumite",
-  "private": true,
-  "version": "0.0.0",
+  "name": "nihoncards",
+  "version": "1.0.0",
   "type": "module",
+  "homepage": "https://coffeenaut.github.io/nihoncards",
+  "description": "A language training app intended for memory retention of Japanese words and phrases",
+  "main": "vite.config.js",
+  "keywords": [],
+  "author": "coffeenaut",
+  "license": "ISC",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview --port 4050"
+    "preview": "vite preview --host"
   },
   "dependencies": {
-    "vue": "^3.3.4"
+    "gh-pages": "^6.1.1",
+    "vue": "^3.3.4",
+    "deploy": "gh-pages -d dist",
+    "wanakana": "^5.3.1"
   },
   "devDependencies": {
     "@heroicons/vue": "^2.0.18",
@@ -18,14 +26,11 @@
     "@tailwindcss/typography": "^0.5.10",
     "@vitejs/plugin-vue": "^4.2.3",
     "autoprefixer": "^10.4.15",
+    "fs": "^0.0.1-security",
+    "minimist-lite": "^2.2.1",
     "postcss": "^8.4.29",
     "tailwindcss": "^3.3.3",
     "vite": "^4.4.5",
     "vue-router": "^4.2.4"
-  },
-  "description": "This is a boilerplate package that is clone-able for quickstarting a vue app + tailwind and heroicons bundled with vite.",
-  "main": "vite.config.js",
-  "keywords": [],
-  "author": "coffeenaut",
-  "license": "ISC"
+  }
 }

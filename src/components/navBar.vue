@@ -1,9 +1,10 @@
 <script setup>
 import {computed, ref} from 'vue'
 import menuIcon from '@heroicons/vue/20/solid/Bars3Icon'
-import contentList from './contentList.vue';
-import menuOverlay from './menuOverlay.vue';
-import sideBar from './sideBar.vue';
+import XMarkIcon from '@heroicons/vue/20/solid/XMarkIcon';
+import MenuList from './MenuList.vue';
+import MobileNavList from './MobileNavList.vue';
+import { RouterLink } from 'vue-router';
 const emits = defineEmits(['showMenuEmit'])
 
 const sideMenuShown = ref(false)
@@ -33,78 +34,49 @@ function showMenu() {
         type: Array,
         required: true
     }
- });
- const getNests = computed(() => {
-    let nests = []
-    for (let child of navProps.list) {
-        if (Array.isArray(child.path)) {
-            nests.push(child)
-        }       
-    }
-    return nests
  })
  const getRootList = computed(() => {
     return getNodeNameList(navProps.list)
  })
-const getHasSubMenuList = computed( () =>  {
-    return getNodeNameList(getNests.value)
-})
- function getNodeNameList(list) {
-    let nodes = []
-    for(let child of list) {
-        nodes.push(child.name)
-    }
-    return nodes
- }
 function closeSideMenu() {
   showSideMenu.value = false
 }
- function hover(it) {
-    activeHover.value = it
- }
- function unhover() {
-    let subList = getHasSubMenuList
-    if(activeHover.value == 'subNav') {
-        console.log(activeHover.value)
-        activeHover.value = null
-    }
-    else if(subList.value.indexOf(activeHover.value) > -1) {
-
-    }
-        
-
- }
- const showHover = computed (() => {
-    let subList = getHasSubMenuList
-    if(!activeHover.value) {
-        return false
-    }
-    else {
-        if( subList.value.indexOf(activeHover.value) > -1 || activeHover.value === "subNav")
-            return true
-    }
- })
 </script>
 <template>
-    <div class="screenOverlay" :class="showSideMenu ? 'show' : 'hide'">
-        <menuOverlay @close-menu-emit="closeSideMenu" :toggle-animate="sideMenuShown">
-            <template #logo>
-            <img src="../assets/Gx250.svg" />
-            </template>
-            <sideBar @close-menu-emit="closeSideMenu" :list="navProps.list" />
-        </menuOverlay>
-    </div>
-    <div class="flex w-full justify-between shadow-md gap-x-4 p-2">
-        <slot name="logo"></slot>
-        <menuIcon @click="showMenu" class="cursor-pointer h-8 w-8 stroke-gray-500 lg:hidden" />
-        <nav class="hidden lg:flex">
-            <div class="flex flex-col">
-                <contentList @hovered-over-emit="hover" @mouseleave="unhover" :list="getRootList" :vertical="false"></contentList>
-                <div @mouseover="hover('subNav')" @mouseleave="unhover" class="z-10 px-4 py-3 shadow-lg rounded-md fixed delay-100 subNavigation" :class="{'showSNav': showHover}">
-                    <contentList v-for="nList, i in getNests" :list="getNodeNameList(nList.path)" :vertical="false"/>
-                </div>
+    <div class="menu-overlay ":class="showSideMenu && 'show'">
+        <div class="sidebar w-1/2 md:w-1/3" :class="showSideMenu && 'slide-right'">
+            <div class="flex justify-between">
+                <slot name="logo"></slot>
+                <XMarkIcon @click="closeSideMenu" class="icon-medium-gray cursor-pointer" />
             </div>
-            <slot></slot>
+        <div class="flex flex-col w-1/3">
+                <MobileNavList v-for="(route, i) in navProps.list"
+                :key="i"
+                :navIndex="i"
+                :item="route"
+                :isParent="true"
+                :displayChild="false"
+                @close-menu-emit="closeSideMenu"
+                />
+            <!-- <RouterLink v-for="(route, i) in navProps.list" :to="`/${route.path}`">
+                {{ route }}
+            </RouterLink> -->
+        </div>
+        </div>
+    </div>
+    <div class="flex w-full justify-between gap-x-4 top-banner">
+        <a href="/"><slot name="logo"></slot></a>
+        <menuIcon @click="showMenu" class="icon-medium-gray md:hidden cursor-pointer" />
+        <nav class="hidden md:flex">
+            <div class="flex gap-x-10 items-center">
+                <MenuList v-for="(route, i) in navProps.list"
+                :key="i"
+                :navIndex="i"
+                :item="route"
+                :isParent="true"
+                :displayChild="false"
+                />
+            </div>
         </nav>
     </div>
 </template>

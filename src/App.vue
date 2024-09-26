@@ -1,21 +1,25 @@
 <script setup>
 import { RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/navBar.vue'
+import Logo from './components/Logo.vue'
+import routes from './data/routes.json'
+
+const links = ["play", "learn", "about"]
 </script>
-
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
-  </div>
-    <HelloWorld msg="Vite + Vue" />
-    <RouterView />
+    <div class="flex flex-col w-full">
+      <div class="flex w-full">
+        <NavBar :list="routes">
+          <template #logo>
+            <div class="flex gap-x-10 items-center">
+              <Logo class="h-10 w-16" />
+              <div class="site-title">nihon cards</div>
+          </div>
+          </template>
+        </NavBar>
+      </div>
+      <div class="flex w-full">
+        <RouterView />
+      </div>
+    </div>
 </template>
-
-<style scoped>
-@import '/src/assets/base.css';
-</style>

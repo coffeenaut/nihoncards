@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="9.8210125mm"
+   height="12.246257mm"
+   viewBox="0 0 9.8210125 12.246257"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="translate(-49.239541,-115.21485)">
+    <rect
+       style="fill:#f8f8f8;fill-opacity:1;stroke:#16325b;stroke-width:0.619889;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:0.909804"
+       id="rect4"
+       width="7.8596215"
+       height="11.676263"
+       x="66.275131"
+       y="115.93487"
+       rx="0.72349441"
+       ry="0.82987779"
+       transform="matrix(0.99996004,0.00893955,-0.13181978,0.9912737,0,0)" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.17532px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#227b94;fill-opacity:1;stroke:#227b94;stroke-width:0.46315;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+       x="71.782761"
+       y="115.06284"
+       id="text5"
+       transform="matrix(0.93723192,0.00837877,-0.14171766,1.0657048,0,0)"><tspan
+         id="tspan5"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:6.17532px;font-family:sans-serif;-inkscape-font-specification:sans-serif;fill:#227b94;fill-opacity:1;stroke:#227b94;stroke-width:0.46315;stroke-dasharray:none;stroke-opacity:1"
+         x="71.782761"
+         y="115.06284">日</tspan></text>
+  </g>
+</svg>
